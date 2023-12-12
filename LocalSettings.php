@@ -122,7 +122,7 @@ $wgDiff3 = "";
 
 ## Default skin: you can change the default skin. Use the internal symbolic
 ## names, e.g. 'vector' or 'monobook':
-$wgDefaultSkin = "vector";
+$wgDefaultSkin = "Anisa";
 
 # Enabled skins.
 # The following skins were automatically enabled:
@@ -152,3 +152,7 @@ wfLoadExtension( 'WikibaseClient', "$IP/extensions/Wikibase/extension-client.jso
 require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
 
 wfLoadExtension( 'WikibaseLexeme' );
+
+wfLoadSkin( 'Anisa' );
+
+$wgDeprecationReleaseLimit = '1.0';
