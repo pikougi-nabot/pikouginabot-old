@@ -784,6 +784,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'wmde/php-vuejs-templating' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '6db5bd039dfa015b8850f121e711a4fc4fa0788d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../wmde/php-vuejs-templating',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'zordius/lightncandy' => array(
             'pretty_version' => 'v1.2.6',
             'version' => '1.2.6.0',
