@@ -11,10 +11,11 @@ class ComposerStaticInit_mediawiki_vendor
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'c3f7f0e81464740a933532e81fa26cc7' => __DIR__ . '/..' . '/wikimedia/base-convert/src/Functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         'c50606d667a3fde2b80a955639479d3d' => __DIR__ . '/..' . '/wikimedia/timestamp/src/defines.php',
+        '3ef87127dc6892a0a78f223558a0b940' => __DIR__ . '/..' . '/diff/diff/Diff.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '6513700b70192b7dfd0e5e9fc8082cf3' => __DIR__ . '/..' . '/wikimedia/relpath/src/Wikimedia/RelPath.php',
     );
@@ -48,20 +49,33 @@ class ComposerStaticInit_mediawiki_vendor
             'Wikimedia\\Assert\\' => 17,
             'Wikimedia\\' => 10,
         ),
+        'V' => 
+        array (
+            'ValueValidators\\' => 16,
+            'ValueParsers\\' => 13,
+            'ValueFormatters\\' => 16,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Swaggest\\JsonDiff\\' => 18,
             'Shellbox\\' => 9,
+            'Serializers\\' => 12,
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
             'Psr\\Container\\' => 14,
             'Pleo\\BloomFilter\\' => 17,
+        ),
+        'O' => 
+        array (
+            'Onoi\\MessageReporter\\' => 21,
         ),
         'M' => 
         array (
@@ -85,9 +99,19 @@ class ComposerStaticInit_mediawiki_vendor
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'D' => 
+        array (
+            'Diff\\' => 5,
+            'Deserializers\\' => 14,
+            'DataValues\\Serializers\\' => 23,
+            'DataValues\\Geo\\' => 15,
+            'DataValues\\Deserializers\\' => 25,
+            'DataValues\\' => 11,
+        ),
         'C' => 
         array (
             'Composer\\Semver\\' => 16,
+            'Composer\\Installers\\' => 20,
             'CLDRPluralRuleParser\\' => 21,
         ),
         'B' => 
@@ -190,6 +214,20 @@ class ComposerStaticInit_mediawiki_vendor
             4 => __DIR__ . '/..' . '/wikimedia/wait-condition-loop/src',
             5 => __DIR__ . '/..' . '/wikimedia/wrappedstring/src',
         ),
+        'ValueValidators\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/interfaces/src/ValueValidators',
+        ),
+        'ValueParsers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/interfaces/src/ValueParsers',
+            1 => __DIR__ . '/..' . '/data-values/common/src/ValueParsers',
+        ),
+        'ValueFormatters\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters',
+            1 => __DIR__ . '/..' . '/data-values/common/src/ValueFormatters',
+        ),
         'Symfony\\Polyfill\\Php81\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
@@ -202,9 +240,21 @@ class ComposerStaticInit_mediawiki_vendor
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Swaggest\\JsonDiff\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/swaggest/json-diff/src',
+        ),
         'Shellbox\\' => 
         array (
             0 => __DIR__ . '/..' . '/wikimedia/shellbox/src',
+        ),
+        'Serializers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/serialization/serialization/src/Serializers',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -212,8 +262,8 @@ class ComposerStaticInit_mediawiki_vendor
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -226,6 +276,10 @@ class ComposerStaticInit_mediawiki_vendor
         'Pleo\\BloomFilter\\' => 
         array (
             0 => __DIR__ . '/..' . '/pleonasm/bloom-filter/src',
+        ),
+        'Onoi\\MessageReporter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/onoi/message-reporter/src',
         ),
         'Monolog\\' => 
         array (
@@ -255,9 +309,38 @@ class ComposerStaticInit_mediawiki_vendor
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Diff\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/diff/diff/src',
+        ),
+        'Deserializers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers',
+        ),
+        'DataValues\\Serializers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/serialization/src/Serializers',
+        ),
+        'DataValues\\Geo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/geo/src',
+        ),
+        'DataValues\\Deserializers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/serialization/src/Deserializers',
+        ),
+        'DataValues\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/data-values/data-values/src',
+            1 => __DIR__ . '/..' . '/data-values/common/src/DataValues',
+        ),
         'Composer\\Semver\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
+        ),
+        'Composer\\Installers\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
         'CLDRPluralRuleParser\\' => 
         array (
@@ -270,6 +353,19 @@ class ComposerStaticInit_mediawiki_vendor
     );
 
     public static $prefixesPsr0 = array (
+        'V' => 
+        array (
+            'ValueParsers\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/data-values/number/src',
+                1 => __DIR__ . '/..' . '/data-values/time/src',
+            ),
+            'ValueFormatters\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/data-values/number/src',
+                1 => __DIR__ . '/..' . '/data-values/time/src',
+            ),
+        ),
         'N' => 
         array (
             'Net' => 
@@ -297,11 +393,31 @@ class ComposerStaticInit_mediawiki_vendor
                 0 => __DIR__ . '/..' . '/wikimedia/less.php/lib',
             ),
         ),
+        'D' => 
+        array (
+            'DataValues\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/data-values/number/src',
+                1 => __DIR__ . '/..' . '/data-values/time/src',
+            ),
+        ),
         'C' => 
         array (
             'Console' => 
             array (
                 0 => __DIR__ . '/..' . '/pear/console_getopt',
+            ),
+            'ComposerVendorHtaccessCreator' => 
+            array (
+                0 => __DIR__ . '/../..' . '/includes/composer',
+            ),
+            'ComposerPhpunitXmlCoverageEdit' => 
+            array (
+                0 => __DIR__ . '/../..' . '/includes/composer',
+            ),
+            'ComposerHookHandler' => 
+            array (
+                0 => __DIR__ . '/../..' . '/includes/composer',
             ),
             'CSSMin' => 
             array (
@@ -337,7 +453,112 @@ class ComposerStaticInit_mediawiki_vendor
         'Cdb\\Writer' => __DIR__ . '/..' . '/wikimedia/cdb/src/Writer.php',
         'Cdb\\Writer\\DBA' => __DIR__ . '/..' . '/wikimedia/cdb/src/Writer/DBA.php',
         'Cdb\\Writer\\PHP' => __DIR__ . '/..' . '/wikimedia/cdb/src/Writer/PHP.php',
+        'ComposerHookHandler' => __DIR__ . '/../..' . '/includes/composer/ComposerHookHandler.php',
+        'ComposerPhpunitXmlCoverageEdit' => __DIR__ . '/../..' . '/includes/composer/ComposerPhpunitXmlCoverageEdit.php',
+        'ComposerVendorHtaccessCreator' => __DIR__ . '/../..' . '/includes/composer/ComposerVendorHtaccessCreator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Composer\\Installers\\AglInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AglInstaller.php',
+        'Composer\\Installers\\AimeosInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AimeosInstaller.php',
+        'Composer\\Installers\\AnnotateCmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AnnotateCmsInstaller.php',
+        'Composer\\Installers\\AsgardInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AsgardInstaller.php',
+        'Composer\\Installers\\AttogramInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/AttogramInstaller.php',
+        'Composer\\Installers\\BaseInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BaseInstaller.php',
+        'Composer\\Installers\\BitrixInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BitrixInstaller.php',
+        'Composer\\Installers\\BonefishInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/BonefishInstaller.php',
+        'Composer\\Installers\\CakePHPInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CakePHPInstaller.php',
+        'Composer\\Installers\\ChefInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ChefInstaller.php',
+        'Composer\\Installers\\CiviCrmInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CiviCrmInstaller.php',
+        'Composer\\Installers\\ClanCatsFrameworkInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ClanCatsFrameworkInstaller.php',
+        'Composer\\Installers\\CockpitInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CockpitInstaller.php',
+        'Composer\\Installers\\CodeIgniterInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CodeIgniterInstaller.php',
+        'Composer\\Installers\\Concrete5Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Concrete5Installer.php',
+        'Composer\\Installers\\CraftInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CraftInstaller.php',
+        'Composer\\Installers\\CroogoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/CroogoInstaller.php',
+        'Composer\\Installers\\DecibelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DecibelInstaller.php',
+        'Composer\\Installers\\DframeInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DframeInstaller.php',
+        'Composer\\Installers\\DokuWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DokuWikiInstaller.php',
+        'Composer\\Installers\\DolibarrInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DolibarrInstaller.php',
+        'Composer\\Installers\\DrupalInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/DrupalInstaller.php',
+        'Composer\\Installers\\ElggInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ElggInstaller.php',
+        'Composer\\Installers\\EliasisInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/EliasisInstaller.php',
+        'Composer\\Installers\\ExpressionEngineInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ExpressionEngineInstaller.php',
+        'Composer\\Installers\\EzPlatformInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/EzPlatformInstaller.php',
+        'Composer\\Installers\\FuelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/FuelInstaller.php',
+        'Composer\\Installers\\FuelphpInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/FuelphpInstaller.php',
+        'Composer\\Installers\\GravInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/GravInstaller.php',
+        'Composer\\Installers\\HuradInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/HuradInstaller.php',
+        'Composer\\Installers\\ImageCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ImageCMSInstaller.php',
+        'Composer\\Installers\\Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Installer.php',
+        'Composer\\Installers\\ItopInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ItopInstaller.php',
+        'Composer\\Installers\\JoomlaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/JoomlaInstaller.php',
+        'Composer\\Installers\\KanboardInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KanboardInstaller.php',
+        'Composer\\Installers\\KirbyInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KirbyInstaller.php',
+        'Composer\\Installers\\KnownInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KnownInstaller.php',
+        'Composer\\Installers\\KodiCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KodiCMSInstaller.php',
+        'Composer\\Installers\\KohanaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/KohanaInstaller.php',
+        'Composer\\Installers\\LanManagementSystemInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LanManagementSystemInstaller.php',
+        'Composer\\Installers\\LaravelInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LaravelInstaller.php',
+        'Composer\\Installers\\LavaLiteInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LavaLiteInstaller.php',
+        'Composer\\Installers\\LithiumInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/LithiumInstaller.php',
+        'Composer\\Installers\\MODULEWorkInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MODULEWorkInstaller.php',
+        'Composer\\Installers\\MODXEvoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MODXEvoInstaller.php',
+        'Composer\\Installers\\MagentoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MagentoInstaller.php',
+        'Composer\\Installers\\MajimaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MajimaInstaller.php',
+        'Composer\\Installers\\MakoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MakoInstaller.php',
+        'Composer\\Installers\\MantisBTInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MantisBTInstaller.php',
+        'Composer\\Installers\\MauticInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MauticInstaller.php',
+        'Composer\\Installers\\MayaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MayaInstaller.php',
+        'Composer\\Installers\\MediaWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MediaWikiInstaller.php',
+        'Composer\\Installers\\MiaoxingInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MiaoxingInstaller.php',
+        'Composer\\Installers\\MicroweberInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MicroweberInstaller.php',
+        'Composer\\Installers\\ModxInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ModxInstaller.php',
+        'Composer\\Installers\\MoodleInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/MoodleInstaller.php',
+        'Composer\\Installers\\OctoberInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OctoberInstaller.php',
+        'Composer\\Installers\\OntoWikiInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OntoWikiInstaller.php',
+        'Composer\\Installers\\OsclassInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OsclassInstaller.php',
+        'Composer\\Installers\\OxidInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/OxidInstaller.php',
+        'Composer\\Installers\\PPIInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PPIInstaller.php',
+        'Composer\\Installers\\PantheonInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PantheonInstaller.php',
+        'Composer\\Installers\\PhiftyInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PhiftyInstaller.php',
+        'Composer\\Installers\\PhpBBInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PhpBBInstaller.php',
+        'Composer\\Installers\\PimcoreInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PimcoreInstaller.php',
+        'Composer\\Installers\\PiwikInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PiwikInstaller.php',
+        'Composer\\Installers\\PlentymarketsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PlentymarketsInstaller.php',
+        'Composer\\Installers\\Plugin' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Plugin.php',
+        'Composer\\Installers\\PortoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PortoInstaller.php',
+        'Composer\\Installers\\PrestashopInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PrestashopInstaller.php',
+        'Composer\\Installers\\ProcessWireInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ProcessWireInstaller.php',
+        'Composer\\Installers\\PuppetInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PuppetInstaller.php',
+        'Composer\\Installers\\PxcmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/PxcmsInstaller.php',
+        'Composer\\Installers\\RadPHPInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RadPHPInstaller.php',
+        'Composer\\Installers\\ReIndexInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ReIndexInstaller.php',
+        'Composer\\Installers\\Redaxo5Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Redaxo5Installer.php',
+        'Composer\\Installers\\RedaxoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RedaxoInstaller.php',
+        'Composer\\Installers\\RoundcubeInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/RoundcubeInstaller.php',
+        'Composer\\Installers\\SMFInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SMFInstaller.php',
+        'Composer\\Installers\\ShopwareInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ShopwareInstaller.php',
+        'Composer\\Installers\\SilverStripeInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SilverStripeInstaller.php',
+        'Composer\\Installers\\SiteDirectInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SiteDirectInstaller.php',
+        'Composer\\Installers\\StarbugInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/StarbugInstaller.php',
+        'Composer\\Installers\\SyDESInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SyDESInstaller.php',
+        'Composer\\Installers\\SyliusInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/SyliusInstaller.php',
+        'Composer\\Installers\\Symfony1Installer' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/Symfony1Installer.php',
+        'Composer\\Installers\\TYPO3CmsInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TYPO3CmsInstaller.php',
+        'Composer\\Installers\\TYPO3FlowInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TYPO3FlowInstaller.php',
+        'Composer\\Installers\\TaoInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TaoInstaller.php',
+        'Composer\\Installers\\TastyIgniterInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TastyIgniterInstaller.php',
+        'Composer\\Installers\\TheliaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TheliaInstaller.php',
+        'Composer\\Installers\\TuskInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/TuskInstaller.php',
+        'Composer\\Installers\\UserFrostingInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/UserFrostingInstaller.php',
+        'Composer\\Installers\\VanillaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/VanillaInstaller.php',
+        'Composer\\Installers\\VgmcpInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/VgmcpInstaller.php',
+        'Composer\\Installers\\WHMCSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WHMCSInstaller.php',
+        'Composer\\Installers\\WinterInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WinterInstaller.php',
+        'Composer\\Installers\\WolfCMSInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WolfCMSInstaller.php',
+        'Composer\\Installers\\WordPressInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/WordPressInstaller.php',
+        'Composer\\Installers\\YawikInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/YawikInstaller.php',
+        'Composer\\Installers\\ZendInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ZendInstaller.php',
+        'Composer\\Installers\\ZikulaInstaller' => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers/ZikulaInstaller.php',
         'Composer\\Semver\\Comparator' => __DIR__ . '/..' . '/composer/semver/src/Comparator.php',
         'Composer\\Semver\\CompilingMatcher' => __DIR__ . '/..' . '/composer/semver/src/CompilingMatcher.php',
         'Composer\\Semver\\Constraint\\Bound' => __DIR__ . '/..' . '/composer/semver/src/Constraint/Bound.php',
@@ -351,6 +572,80 @@ class ComposerStaticInit_mediawiki_vendor
         'Composer\\Semver\\Semver' => __DIR__ . '/..' . '/composer/semver/src/Semver.php',
         'Composer\\Semver\\VersionParser' => __DIR__ . '/..' . '/composer/semver/src/VersionParser.php',
         'Console_Getopt' => __DIR__ . '/..' . '/pear/console_getopt/Console/Getopt.php',
+        'DataValues\\BooleanValue' => __DIR__ . '/..' . '/data-values/data-values/src/BooleanValue.php',
+        'DataValues\\DataValue' => __DIR__ . '/..' . '/data-values/data-values/src/DataValue.php',
+        'DataValues\\DataValueObject' => __DIR__ . '/..' . '/data-values/data-values/src/DataValueObject.php',
+        'DataValues\\DecimalMath' => __DIR__ . '/..' . '/data-values/number/src/DataValues/DecimalMath.php',
+        'DataValues\\DecimalValue' => __DIR__ . '/..' . '/data-values/number/src/DataValues/DecimalValue.php',
+        'DataValues\\Deserializers\\DataValueDeserializer' => __DIR__ . '/..' . '/data-values/serialization/src/Deserializers/DataValueDeserializer.php',
+        'DataValues\\Geo\\Formatters\\GlobeCoordinateFormatter' => __DIR__ . '/..' . '/data-values/geo/src/Formatters/GlobeCoordinateFormatter.php',
+        'DataValues\\Geo\\Formatters\\LatLongFormatter' => __DIR__ . '/..' . '/data-values/geo/src/Formatters/LatLongFormatter.php',
+        'DataValues\\Geo\\GlobeMath' => __DIR__ . '/..' . '/data-values/geo/src/GlobeMath.php',
+        'DataValues\\Geo\\PackagePrivate\\DmPrecisionDetector' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/DmPrecisionDetector.php',
+        'DataValues\\Geo\\PackagePrivate\\DmsPrecisionDetector' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/DmsPrecisionDetector.php',
+        'DataValues\\Geo\\PackagePrivate\\FloatPrecisionDetector' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/FloatPrecisionDetector.php',
+        'DataValues\\Geo\\PackagePrivate\\LatLongPrecisionParser' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/LatLongPrecisionParser.php',
+        'DataValues\\Geo\\PackagePrivate\\PreciseLatLong' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/PreciseLatLong.php',
+        'DataValues\\Geo\\PackagePrivate\\Precision' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/Precision.php',
+        'DataValues\\Geo\\PackagePrivate\\PrecisionDetector' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/PrecisionDetector.php',
+        'DataValues\\Geo\\PackagePrivate\\PrecisionParser' => __DIR__ . '/..' . '/data-values/geo/src/PackagePrivate/PrecisionParser.php',
+        'DataValues\\Geo\\Parsers\\DdCoordinateParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/DdCoordinateParser.php',
+        'DataValues\\Geo\\Parsers\\DmCoordinateParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/DmCoordinateParser.php',
+        'DataValues\\Geo\\Parsers\\DmsCoordinateParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/DmsCoordinateParser.php',
+        'DataValues\\Geo\\Parsers\\FloatCoordinateParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/FloatCoordinateParser.php',
+        'DataValues\\Geo\\Parsers\\GlobeCoordinateParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/GlobeCoordinateParser.php',
+        'DataValues\\Geo\\Parsers\\LatLongParser' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/LatLongParser.php',
+        'DataValues\\Geo\\Parsers\\LatLongParserBase' => __DIR__ . '/..' . '/data-values/geo/src/Parsers/LatLongParserBase.php',
+        'DataValues\\Geo\\Values\\GlobeCoordinateValue' => __DIR__ . '/..' . '/data-values/geo/src/Values/GlobeCoordinateValue.php',
+        'DataValues\\Geo\\Values\\LatLongValue' => __DIR__ . '/..' . '/data-values/geo/src/Values/LatLongValue.php',
+        'DataValues\\IllegalValueException' => __DIR__ . '/..' . '/data-values/data-values/src/IllegalValueException.php',
+        'DataValues\\MonolingualTextValue' => __DIR__ . '/..' . '/data-values/common/src/DataValues/MonolingualTextValue.php',
+        'DataValues\\MultilingualTextValue' => __DIR__ . '/..' . '/data-values/common/src/DataValues/MultilingualTextValue.php',
+        'DataValues\\NumberValue' => __DIR__ . '/..' . '/data-values/data-values/src/NumberValue.php',
+        'DataValues\\QuantityValue' => __DIR__ . '/..' . '/data-values/number/src/DataValues/QuantityValue.php',
+        'DataValues\\Serializers\\DataValueSerializer' => __DIR__ . '/..' . '/data-values/serialization/src/Serializers/DataValueSerializer.php',
+        'DataValues\\StringValue' => __DIR__ . '/..' . '/data-values/data-values/src/StringValue.php',
+        'DataValues\\TimeValue' => __DIR__ . '/..' . '/data-values/time/src/DataValues/TimeValue.php',
+        'DataValues\\TimeValueCalculator' => __DIR__ . '/..' . '/data-values/time/src/DataValues/TimeValueCalculator.php',
+        'DataValues\\UnDeserializableValue' => __DIR__ . '/..' . '/data-values/data-values/src/UnDeserializableValue.php',
+        'DataValues\\UnboundedQuantityValue' => __DIR__ . '/..' . '/data-values/number/src/DataValues/UnboundedQuantityValue.php',
+        'DataValues\\UnknownValue' => __DIR__ . '/..' . '/data-values/data-values/src/UnknownValue.php',
+        'Deserializers\\Deserializer' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Deserializer.php',
+        'Deserializers\\DispatchableDeserializer' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/DispatchableDeserializer.php',
+        'Deserializers\\DispatchingDeserializer' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/DispatchingDeserializer.php',
+        'Deserializers\\Exceptions\\DeserializationException' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Exceptions/DeserializationException.php',
+        'Deserializers\\Exceptions\\InvalidAttributeException' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Exceptions/InvalidAttributeException.php',
+        'Deserializers\\Exceptions\\MissingAttributeException' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Exceptions/MissingAttributeException.php',
+        'Deserializers\\Exceptions\\MissingTypeException' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Exceptions/MissingTypeException.php',
+        'Deserializers\\Exceptions\\UnsupportedTypeException' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/Exceptions/UnsupportedTypeException.php',
+        'Deserializers\\TypedObjectDeserializer' => __DIR__ . '/..' . '/serialization/serialization/src/Deserializers/TypedObjectDeserializer.php',
+        'Diff\\ArrayComparer\\ArrayComparer' => __DIR__ . '/..' . '/diff/diff/src/ArrayComparer/ArrayComparer.php',
+        'Diff\\ArrayComparer\\NativeArrayComparer' => __DIR__ . '/..' . '/diff/diff/src/ArrayComparer/NativeArrayComparer.php',
+        'Diff\\ArrayComparer\\OrderedArrayComparer' => __DIR__ . '/..' . '/diff/diff/src/ArrayComparer/OrderedArrayComparer.php',
+        'Diff\\ArrayComparer\\StrategicArrayComparer' => __DIR__ . '/..' . '/diff/diff/src/ArrayComparer/StrategicArrayComparer.php',
+        'Diff\\ArrayComparer\\StrictArrayComparer' => __DIR__ . '/..' . '/diff/diff/src/ArrayComparer/StrictArrayComparer.php',
+        'Diff\\Comparer\\CallbackComparer' => __DIR__ . '/..' . '/diff/diff/src/Comparer/CallbackComparer.php',
+        'Diff\\Comparer\\ComparableComparer' => __DIR__ . '/..' . '/diff/diff/src/Comparer/ComparableComparer.php',
+        'Diff\\Comparer\\StrictComparer' => __DIR__ . '/..' . '/diff/diff/src/Comparer/StrictComparer.php',
+        'Diff\\Comparer\\ValueComparer' => __DIR__ . '/..' . '/diff/diff/src/Comparer/ValueComparer.php',
+        'Diff\\DiffOpFactory' => __DIR__ . '/..' . '/diff/diff/src/DiffOpFactory.php',
+        'Diff\\DiffOp\\AtomicDiffOp' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/AtomicDiffOp.php',
+        'Diff\\DiffOp\\DiffOp' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/DiffOp.php',
+        'Diff\\DiffOp\\DiffOpAdd' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/DiffOpAdd.php',
+        'Diff\\DiffOp\\DiffOpChange' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/DiffOpChange.php',
+        'Diff\\DiffOp\\DiffOpRemove' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/DiffOpRemove.php',
+        'Diff\\DiffOp\\Diff\\Diff' => __DIR__ . '/..' . '/diff/diff/src/DiffOp/Diff/Diff.php',
+        'Diff\\Differ\\CallbackListDiffer' => __DIR__ . '/..' . '/diff/diff/src/Differ/CallbackListDiffer.php',
+        'Diff\\Differ\\Differ' => __DIR__ . '/..' . '/diff/diff/src/Differ/Differ.php',
+        'Diff\\Differ\\ListDiffer' => __DIR__ . '/..' . '/diff/diff/src/Differ/ListDiffer.php',
+        'Diff\\Differ\\MapDiffer' => __DIR__ . '/..' . '/diff/diff/src/Differ/MapDiffer.php',
+        'Diff\\Differ\\OrderedListDiffer' => __DIR__ . '/..' . '/diff/diff/src/Differ/OrderedListDiffer.php',
+        'Diff\\Patcher\\ListPatcher' => __DIR__ . '/..' . '/diff/diff/src/Patcher/ListPatcher.php',
+        'Diff\\Patcher\\MapPatcher' => __DIR__ . '/..' . '/diff/diff/src/Patcher/MapPatcher.php',
+        'Diff\\Patcher\\Patcher' => __DIR__ . '/..' . '/diff/diff/src/Patcher/Patcher.php',
+        'Diff\\Patcher\\PatcherException' => __DIR__ . '/..' . '/diff/diff/src/Patcher/PatcherException.php',
+        'Diff\\Patcher\\PreviewablePatcher' => __DIR__ . '/..' . '/diff/diff/src/Patcher/PreviewablePatcher.php',
+        'Diff\\Patcher\\ThrowingPatcher' => __DIR__ . '/..' . '/diff/diff/src/Patcher/ThrowingPatcher.php',
         'GuzzleHttp\\BodySummarizer' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizer.php',
         'GuzzleHttp\\BodySummarizerInterface' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/BodySummarizerInterface.php',
         'GuzzleHttp\\Client' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/Client.php',
@@ -748,6 +1043,14 @@ class ComposerStaticInit_mediawiki_vendor
         'OOUI\\Widget' => __DIR__ . '/..' . '/oojs/oojs-ui/php/Widget.php',
         'OOUI\\WikimediaUITheme' => __DIR__ . '/..' . '/oojs/oojs-ui/php/themes/WikimediaUITheme.php',
         'OS_Guess' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/OS/Guess.php',
+        'Onoi\\MessageReporter\\CallbackMessageReporter' => __DIR__ . '/..' . '/onoi/message-reporter/src/CallbackMessageReporter.php',
+        'Onoi\\MessageReporter\\MessageReporter' => __DIR__ . '/..' . '/onoi/message-reporter/src/MessageReporter.php',
+        'Onoi\\MessageReporter\\MessageReporterAware' => __DIR__ . '/..' . '/onoi/message-reporter/src/MessageReporterAware.php',
+        'Onoi\\MessageReporter\\MessageReporterAwareTrait' => __DIR__ . '/..' . '/onoi/message-reporter/src/MessageReporterAwareTrait.php',
+        'Onoi\\MessageReporter\\MessageReporterFactory' => __DIR__ . '/..' . '/onoi/message-reporter/src/MessageReporterFactory.php',
+        'Onoi\\MessageReporter\\NullMessageReporter' => __DIR__ . '/..' . '/onoi/message-reporter/src/NullMessageReporter.php',
+        'Onoi\\MessageReporter\\ObservableMessageReporter' => __DIR__ . '/..' . '/onoi/message-reporter/src/ObservableMessageReporter.php',
+        'Onoi\\MessageReporter\\SpyMessageReporter' => __DIR__ . '/..' . '/onoi/message-reporter/src/SpyMessageReporter.php',
         'PEAR' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR.php',
         'PEAR_ErrorStack' => __DIR__ . '/..' . '/pear/pear-core-minimal/src/PEAR/ErrorStack.php',
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
@@ -786,7 +1089,15 @@ class ComposerStaticInit_mediawiki_vendor
         'Psr\\Log\\Test\\DummyTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/DummyTest.php',
         'Psr\\Log\\Test\\LoggerInterfaceTest' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/LoggerInterfaceTest.php',
         'Psr\\Log\\Test\\TestLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/Test/TestLogger.php',
+        'Psr\\SimpleCache\\CacheException' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheException.php',
+        'Psr\\SimpleCache\\CacheInterface' => __DIR__ . '/..' . '/psr/simple-cache/src/CacheInterface.php',
+        'Psr\\SimpleCache\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/simple-cache/src/InvalidArgumentException.php',
         'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
+        'Serializers\\DispatchableSerializer' => __DIR__ . '/..' . '/serialization/serialization/src/Serializers/DispatchableSerializer.php',
+        'Serializers\\DispatchingSerializer' => __DIR__ . '/..' . '/serialization/serialization/src/Serializers/DispatchingSerializer.php',
+        'Serializers\\Exceptions\\SerializationException' => __DIR__ . '/..' . '/serialization/serialization/src/Serializers/Exceptions/SerializationException.php',
+        'Serializers\\Exceptions\\UnsupportedObjectException' => __DIR__ . '/..' . '/serialization/serialization/src/Serializers/Exceptions/UnsupportedObjectException.php',
+        'Serializers\\Serializer' => __DIR__ . '/..' . '/serialization/serialization/src/Serializers/Serializer.php',
         'Shellbox\\Action\\CallAction' => __DIR__ . '/..' . '/wikimedia/shellbox/src/Action/CallAction.php',
         'Shellbox\\Action\\MultipartAction' => __DIR__ . '/..' . '/wikimedia/shellbox/src/Action/MultipartAction.php',
         'Shellbox\\Action\\ShellAction' => __DIR__ . '/..' . '/wikimedia/shellbox/src/Action/ShellAction.php',
@@ -844,6 +1155,29 @@ class ComposerStaticInit_mediawiki_vendor
         'Shellbox\\ShellboxError' => __DIR__ . '/..' . '/wikimedia/shellbox/src/ShellboxError.php',
         'Shellbox\\TempDirManager' => __DIR__ . '/..' . '/wikimedia/shellbox/src/TempDirManager.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'Swaggest\\JsonDiff\\Exception' => __DIR__ . '/..' . '/swaggest/json-diff/src/Exception.php',
+        'Swaggest\\JsonDiff\\InvalidFieldTypeException' => __DIR__ . '/..' . '/swaggest/json-diff/src/InvalidFieldTypeException.php',
+        'Swaggest\\JsonDiff\\JsonDiff' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonDiff.php',
+        'Swaggest\\JsonDiff\\JsonHash' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonHash.php',
+        'Swaggest\\JsonDiff\\JsonMergePatch' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonMergePatch.php',
+        'Swaggest\\JsonDiff\\JsonPatch' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Add' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Add.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Copy' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Copy.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Move' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Move.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\OpPath' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/OpPath.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\OpPathFrom' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/OpPathFrom.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\OpPathValue' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/OpPathValue.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Remove' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Remove.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Replace' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Replace.php',
+        'Swaggest\\JsonDiff\\JsonPatch\\Test' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPatch/Test.php',
+        'Swaggest\\JsonDiff\\JsonPointer' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPointer.php',
+        'Swaggest\\JsonDiff\\JsonPointerException' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonPointerException.php',
+        'Swaggest\\JsonDiff\\JsonValueReplace' => __DIR__ . '/..' . '/swaggest/json-diff/src/JsonValueReplace.php',
+        'Swaggest\\JsonDiff\\MissingFieldException' => __DIR__ . '/..' . '/swaggest/json-diff/src/MissingFieldException.php',
+        'Swaggest\\JsonDiff\\ModifiedPathDiff' => __DIR__ . '/..' . '/swaggest/json-diff/src/ModifiedPathDiff.php',
+        'Swaggest\\JsonDiff\\PatchTestOperationFailedException' => __DIR__ . '/..' . '/swaggest/json-diff/src/PatchTestOperationFailedException.php',
+        'Swaggest\\JsonDiff\\PathException' => __DIR__ . '/..' . '/swaggest/json-diff/src/PathException.php',
+        'Swaggest\\JsonDiff\\UnknownOperationException' => __DIR__ . '/..' . '/swaggest/json-diff/src/UnknownOperationException.php',
         'Symfony\\Component\\Yaml\\Command\\LintCommand' => __DIR__ . '/..' . '/symfony/yaml/Command/LintCommand.php',
         'Symfony\\Component\\Yaml\\Dumper' => __DIR__ . '/..' . '/symfony/yaml/Dumper.php',
         'Symfony\\Component\\Yaml\\Escaper' => __DIR__ . '/..' . '/symfony/yaml/Escaper.php',
@@ -865,6 +1199,47 @@ class ComposerStaticInit_mediawiki_vendor
         'UtfNormal\\Utils' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Utils.php',
         'UtfNormal\\Validator' => __DIR__ . '/..' . '/wikimedia/utfnormal/src/Validator.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
+        'ValueFormatters\\BasicNumberLocalizer' => __DIR__ . '/..' . '/data-values/number/src/ValueFormatters/BasicNumberLocalizer.php',
+        'ValueFormatters\\DecimalFormatter' => __DIR__ . '/..' . '/data-values/number/src/ValueFormatters/DecimalFormatter.php',
+        'ValueFormatters\\Exceptions\\MismatchingDataValueTypeException' => __DIR__ . '/..' . '/data-values/common/src/ValueFormatters/Exceptions/MismatchingDataValueTypeException.php',
+        'ValueFormatters\\FormatterOptions' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters/FormatterOptions.php',
+        'ValueFormatters\\FormattingException' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters/FormattingException.php',
+        'ValueFormatters\\NumberLocalizer' => __DIR__ . '/..' . '/data-values/number/src/ValueFormatters/NumberLocalizer.php',
+        'ValueFormatters\\QuantityFormatter' => __DIR__ . '/..' . '/data-values/number/src/ValueFormatters/QuantityFormatter.php',
+        'ValueFormatters\\QuantityHtmlFormatter' => __DIR__ . '/..' . '/data-values/number/src/ValueFormatters/QuantityHtmlFormatter.php',
+        'ValueFormatters\\StringFormatter' => __DIR__ . '/..' . '/data-values/common/src/ValueFormatters/StringFormatter.php',
+        'ValueFormatters\\TimeFormatter' => __DIR__ . '/..' . '/data-values/time/src/ValueFormatters/TimeFormatter.php',
+        'ValueFormatters\\ValueFormatter' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueFormatters/ValueFormatter.php',
+        'ValueParsers\\BasicNumberUnlocalizer' => __DIR__ . '/..' . '/data-values/number/src/ValueParsers/BasicNumberUnlocalizer.php',
+        'ValueParsers\\BoolParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/BoolParser.php',
+        'ValueParsers\\CalendarModelParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/CalendarModelParser.php',
+        'ValueParsers\\DecimalParser' => __DIR__ . '/..' . '/data-values/number/src/ValueParsers/DecimalParser.php',
+        'ValueParsers\\DispatchingValueParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/DispatchingValueParser.php',
+        'ValueParsers\\EraParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/EraParser.php',
+        'ValueParsers\\FloatParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/FloatParser.php',
+        'ValueParsers\\IntParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/IntParser.php',
+        'ValueParsers\\IsoTimestampParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/IsoTimestampParser.php',
+        'ValueParsers\\MonolingualMonthNameProvider' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/MonolingualMonthNameProvider.php',
+        'ValueParsers\\MonthNameProvider' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/MonthNameProvider.php',
+        'ValueParsers\\MonthNameUnlocalizer' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/MonthNameUnlocalizer.php',
+        'ValueParsers\\Normalizers\\NullStringNormalizer' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/Normalizers/NullStringNormalizer.php',
+        'ValueParsers\\Normalizers\\StringNormalizer' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/Normalizers/StringNormalizer.php',
+        'ValueParsers\\Normalizers\\TrimmingStringNormalizer' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/Normalizers/TrimmingStringNormalizer.php',
+        'ValueParsers\\NullParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/NullParser.php',
+        'ValueParsers\\NumberUnlocalizer' => __DIR__ . '/..' . '/data-values/number/src/ValueParsers/NumberUnlocalizer.php',
+        'ValueParsers\\ParseException' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueParsers/ParseException.php',
+        'ValueParsers\\ParserOptions' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueParsers/ParserOptions.php',
+        'ValueParsers\\PhpDateTimeParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/PhpDateTimeParser.php',
+        'ValueParsers\\QuantityParser' => __DIR__ . '/..' . '/data-values/number/src/ValueParsers/QuantityParser.php',
+        'ValueParsers\\StringParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/StringParser.php',
+        'ValueParsers\\StringValueParser' => __DIR__ . '/..' . '/data-values/common/src/ValueParsers/StringValueParser.php',
+        'ValueParsers\\ValueParser' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueParsers/ValueParser.php',
+        'ValueParsers\\YearMonthDayTimeParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/YearMonthDayTimeParser.php',
+        'ValueParsers\\YearMonthTimeParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/YearMonthTimeParser.php',
+        'ValueParsers\\YearTimeParser' => __DIR__ . '/..' . '/data-values/time/src/ValueParsers/YearTimeParser.php',
+        'ValueValidators\\Error' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueValidators/Error.php',
+        'ValueValidators\\Result' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueValidators/Result.php',
+        'ValueValidators\\ValueValidator' => __DIR__ . '/..' . '/data-values/interfaces/src/ValueValidators/ValueValidator.php',
         'Wikimedia\\Assert\\Assert' => __DIR__ . '/..' . '/wikimedia/assert/src/Assert.php',
         'Wikimedia\\Assert\\AssertionException' => __DIR__ . '/..' . '/wikimedia/assert/src/AssertionException.php',
         'Wikimedia\\Assert\\InvariantException' => __DIR__ . '/..' . '/wikimedia/assert/src/InvariantException.php',
@@ -887,6 +1262,7 @@ class ComposerStaticInit_mediawiki_vendor
         'Wikimedia\\Composer\\Merge\\V2\\NestedArray' => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src/NestedArray.php',
         'Wikimedia\\Composer\\Merge\\V2\\PluginState' => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src/PluginState.php',
         'Wikimedia\\Composer\\Merge\\V2\\StabilityFlags' => __DIR__ . '/..' . '/wikimedia/composer-merge-plugin/src/StabilityFlags.php',
+        'Wikimedia\\Equivset\\Command\\BenchmarkEquivset' => __DIR__ . '/..' . '/wikimedia/equivset/src/Command/BenchmarkEquivset.php',
         'Wikimedia\\Equivset\\Command\\GenerateEquivset' => __DIR__ . '/..' . '/wikimedia/equivset/src/Command/GenerateEquivset.php',
         'Wikimedia\\Equivset\\Equivset' => __DIR__ . '/..' . '/wikimedia/equivset/src/Equivset.php',
         'Wikimedia\\Equivset\\EquivsetInterface' => __DIR__ . '/..' . '/wikimedia/equivset/src/EquivsetInterface.php',
